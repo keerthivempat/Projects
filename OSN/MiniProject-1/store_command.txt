@@ -1,0 +1,7 @@
+echo hi
+sleep 2
+sleep 5
+neonate -n 2
+e hi
+s 2
+v

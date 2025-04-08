@@ -1,0 +1,5 @@
+alias v='vim'
+alias e='echo'
+alias s='sleep'
+
+
