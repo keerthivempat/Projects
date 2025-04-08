@@ -208,13 +208,4 @@ This README provides a detailed description of the system's functionality, compo
 - MAX_PENDING_OPS 1000 
 - FILE_LOCKED -1
 - FILE_AVAILABLE 0
-## **Future Improvements**
-- Redundancy Management: Synchronize replicated data during SS recovery.
-- File Locking Mechanism: Enhance concurrency by adding granular file locking.
-- Scalability: Implement dynamic load balancing among servers.
-- Enhanced User Interface: Provide a GUI for better user experience.
-- not JUST streaming audio files we can also implement to send large videofoiles.
----
 
-## **DONE BY:**
-- **Team_12**
