@@ -1,0 +1,88 @@
+/* Login.css */
+.login-container {
+    background: linear-gradient(135deg, #16e0e4 0%, #c3cfe2 100%);
+  }
+  
+  .login-card {
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+  }
+  
+  .login-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #f321e2, #79d219);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .input-group-text {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  
+  .form-control {
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 3rem;
+  }
+  
+  .input-group-text, .form-control {
+    border-color: #e0e0e0;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #2196F3;
+  }
+  
+  .input-group:focus-within .input-group-text {
+    border-color: #2196F3;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(45deg, #f321d0, #d219b9);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  
+  /* Form animations */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+  }
+  
+  @keyframes success {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); opacity: 0; }
+  }
+  
+  .login-form.error {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  .login-form.success {
+    animation: success 1.5s ease-in-out forwards;
+  }
+  
+  /* Loading animation */
+  .spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
+  }

@@ -1,0 +1,108 @@
+/* Navbar.css */
+.custom-navbar {
+    background: linear-gradient(135deg, #FF9A9E 0%, #FC8EAC 100%);
+    padding: 1rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-text {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-text:hover {
+    transform: translateY(-2px);
+  }
+  
+  .brand-icon {
+    color: white;
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+  }
+  
+  .nav-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover .nav-icon {
+    transform: scale(1.1);
+  }
+  
+  .btn-logout {
+    background: rgba(220, 53, 69, 0.9);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-logout:hover {
+    background: rgb(220, 53, 69);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background: linear-gradient(135deg, #FF9A9E 0%, #FC8EAC 100%);
+      padding: 1rem;
+      border-radius: 0 0 12px 12px;
+      margin-top: 1rem;
+    }
+  
+    .nav-link {
+      padding: 0.8rem 1rem !important;
+    }
+  
+    .btn-logout {
+      margin-top: 0.5rem;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  /* Animation for mobile menu */
+  .navbar-collapse.show {
+    animation: slideDown 0.3s ease forwards;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

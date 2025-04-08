@@ -1,0 +1,9 @@
+db.items.insertOne({
+  name: "Kanchipuram Silk Saree",
+  description: "Handwoven pure silk saree with intricate gold zari work. Comes with a matching blouse piece. Color: Red and Gold.",
+  price: 18999,
+  sellerId: ObjectId("6797b2f508c452adab6992b4"),
+  stockQuantity: 5,
+  category: "Clothing",
+  imageUrl: "https://example.com/images/kanchipuram-silk-saree.jpg"
+});
